@@ -1,23 +1,23 @@
-import React from 'react'
-import { IconType } from 'react-icons'
+import React from 'react';
+import { IconType } from 'react-icons';
 
 export type ButtonProps = {
-  btnType: 'primary' | 'secondary' | 'tertiary'
-  type?: 'button' | 'submit' | 'reset'
-  disable?: boolean
-  name?: string
-  value?: string
-  className?: string
-  btnText?: string
-  form?: string
-  onClick?: () => void
-} & { children?: React.ReactNode }
+  btnType: 'primary' | 'secondary' | 'tertiary';
+  type?: 'button' | 'submit' | 'reset';
+  disable?: boolean;
+  name?: string;
+  value?: string;
+  className?: string;
+  btnText?: string;
+  form?: string;
+  onClick?: () => void;
+} & { children?: React.ReactNode };
 
 export type ButtonWithIconProps = ButtonProps & {
-  Icon: IconType
-}
+  Icon: IconType;
+};
 
 export type FloatingButtonProps = ButtonProps & {
-  Icon: IconType
-  rounded?: boolean
-}
+  Icon: IconType;
+  rounded?: boolean;
+};

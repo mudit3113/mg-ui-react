@@ -1,5 +1,5 @@
-import React from 'react'
-import { ButtonProps } from '../../../../types'
+import React from 'react';
+import { ButtonProps } from '../../../../types';
 
 export const Button: React.FC<ButtonProps> = ({
   btnType = 'primary',
@@ -11,7 +11,7 @@ export const Button: React.FC<ButtonProps> = ({
   btnText,
   children,
   form,
-  onClick
+  onClick,
 }: ButtonProps) => {
   const btnTypeClasses = {
     primary: `outline outline-1 outline-primary-400
@@ -32,15 +32,15 @@ export const Button: React.FC<ButtonProps> = ({
       hover:text-primary-100 focus:text-primary-400
       hover:bg-primary-100 hover:outline-none hover:bg-opacity-10 
       disabled:text-neutral-300 disabled:cursor-not-allowed
-    `
-  }
+    `,
+  };
 
   let sizeClasses = `
   h-8 w-auto rounded text-button px-4 py-1 
   tablet:h-9 tablet:min-w-32 tablet:rounded-md tablet:py-2 tablet:text-button 
   laptop:h-9 laptop:min-w-32 laptop:rounded-md laptop:py-2 laptop:text-button 
   desktop:h-10 desktop:min-w-36 desktop:rounded-lg desktop:py-3 desktop:text-button 
-`
+`;
 
   if (btnType === 'tertiary') {
     sizeClasses = `
@@ -48,26 +48,25 @@ export const Button: React.FC<ButtonProps> = ({
     tablet:h-9 tablet:min-w-auto tablet:rounded-md tablet:py-2 tablet:text-button 
     laptop:h-9 laptop:min-w-auto laptop:rounded-md laptop:py-2 laptop:text-button 
     desktop:h-10 desktop:min-w-auto desktop:rounded-lg desktop:py-3 desktop:text-button 
-  `
+  `;
   }
 
   return (
     <>
-    <button
-      type={type}
-      name={name}
-      value={value}
-      onClick={onClick}
-      disabled={disable}
-      form={form}
-      className={`cursor-pointer
+      <button
+        type={type}
+        name={name}
+        value={value}
+        onClick={onClick}
+        disabled={disable}
+        form={form}
+        className={`cursor-pointer
         ${btnTypeClasses[btnType]}
         ${sizeClasses} 
         ${className}`}
-    >
-      <span>{children || btnText}</span>
-    </button>
+      >
+        <span>{children || btnText}</span>
+      </button>
     </>
-
-  )
-}
+  );
+};

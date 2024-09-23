@@ -1,6 +1,6 @@
-import React from 'react'
-import { ButtonWithIconProps } from '../../../../types'
-import { Button } from '../button'
+import React from 'react';
+import { ButtonWithIconProps } from '../../../../types';
+import { Button } from '../button';
 
 export const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({
   Icon,
@@ -14,5 +14,5 @@ export const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({
         {btnText}
       </div>
     </Button>
-  )
-}
+  );
+};

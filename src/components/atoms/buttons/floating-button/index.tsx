@@ -1,5 +1,5 @@
-import React from 'react'
-import { FloatingButtonProps } from '../../../../types'
+import React from 'react';
+import { FloatingButtonProps } from '../../../../types';
 
 export const FloatingButton: React.FC<FloatingButtonProps> = ({
   btnType = 'primary',
@@ -13,7 +13,7 @@ export const FloatingButton: React.FC<FloatingButtonProps> = ({
   btnText,
   children,
   form,
-  onClick
+  onClick,
 }: FloatingButtonProps) => {
   const btnTypeClasses = {
     primary: `
@@ -36,19 +36,19 @@ export const FloatingButton: React.FC<FloatingButtonProps> = ({
       text-primary-400 
       hover:text-primary-100 focus:text-primary-400
       disabled:text-neutral-300 disabled:cursor-not-allowed
-    `
-  }
+    `,
+  };
 
   let sizeClasses = `
     px-1 py-1 w-auto
     large:px-1.5 large:py-1.5 large:text-lg
-    `
+    `;
 
   let iconClasses = `
     w-8 h-8 
     tablet:w-12 tablet:h-12 laptop:w-12 laptop:h-12
     large:w-14 large:h-14
-    `
+    `;
 
   return (
     <button
@@ -69,5 +69,5 @@ export const FloatingButton: React.FC<FloatingButtonProps> = ({
         {(!Icon && children) || btnText}
       </span>
     </button>
-  )
-}
+  );
+};
