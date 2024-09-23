@@ -1,6 +1,6 @@
 import React from 'react'
 import { ButtonProps } from '../../../../types'
-import "../../../../styles/output.css"
+
 export const Button: React.FC<ButtonProps> = ({
   btnType = 'primary',
   disable = false,
@@ -53,7 +53,6 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <>
-    <h1 className='text-secondary-500'>Hello</h1>
     <button
       type={type}
       name={name}
