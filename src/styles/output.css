@@ -636,16 +636,6 @@ video {
   color: rgb(255 26 61 / var(--tw-text-opacity));
 }
 
-.text-purple-400{
-  --tw-text-opacity: 1;
-  color: rgb(192 132 252 / var(--tw-text-opacity));
-}
-
-.text-secondary-500{
-  --tw-text-opacity: 1;
-  color: rgb(0 186 185 / var(--tw-text-opacity));
-}
-
 .overline{
   text-decoration-line: overline;
 }
